@@ -11,7 +11,7 @@ public class sampledemo1 {
 	}
 	public void main(String ar)
 	{
-		System.out.println("welcome main 3")
+		System.out.println("welcome main 3");
 	}
 
 	public static void main(String[] args) 
