@@ -22,6 +22,18 @@ public class Customer {
 	public void setCity(String city) {
 		this.city = city;
 	}
+	
+	
+	public Customer(int cid, String cname, String city) {
+		super();
+		this.cid = cid;
+		this.cname = cname;
+		this.city = city;
+	}
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Override
 	public String toString() {
 		return "Customer [cid=" + cid + ", cname=" + cname + ", city=" + city + "]";
