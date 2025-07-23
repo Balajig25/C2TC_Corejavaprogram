@@ -12,7 +12,9 @@ public class Customer {
 	}
 	public Customer(int cid,String cname,String city)
 	//Parameterized constructor
-	{
+	{	
+		//this();//calling default constructor
+		this("unknown","puducherry");
 		this.cid=cid;
 		this.cname=cname;
 		this.city=city;
@@ -22,6 +24,7 @@ public class Customer {
 	{
 		this.cname=cname;
 		this.city=city;
+		System.out.println("parameterized constructor has been called");
 	}
 	public int getCid() {
 		return cid;
