@@ -1,63 +1,48 @@
 package daythree;
 
 public class Customer {
-	 private String customerName;
-	 private int customerId;
-	 private String customerCity;
-	 
-	// Default Constructor
-	public Customer() {
-		System.out.println("Default Constructor");
-	}
-	
-	//Parameterized Constructor
-	//use of this keyword
-	public Customer(String customerName, int customerId, String customerCity) {
-		
-		this(); //calling default constructor
-		
-		System.out.println("Parameterized Constructor");
-		this.customerName = customerName;
-		this.customerId = customerId;
-		this.customerCity = customerCity;
-	}
-	
-	//Getter and Setters
-	public String getCustomerName() 
+	private int cid;
+	private String cname;
+	private String city;
+	public Customer()//default constructor
 	{
-		return customerName;
+		this.cid=101;
+		this.cname="Neymar JR";
+		this.city="Brazil";
 	}
-
-	public void setCustomerName(String customerName) 
+	public Customer(int cid,String cname,String city)
+	//Parameterized constructor
 	{
-		this.customerName = customerName;
+		this.cid=cid;
+		this.cname=cname;
+		this.city=city;
 	}
-
-	public int getCustomerId() 
+	public Customer(String cname,String city)
+	//Parameterized constructor
 	{
-		return customerId;
+		this.cname=cname;
+		this.city=city;
 	}
-
-	public void setCustomerId(int customerId) 
-	{
-		this.customerId = customerId;
+	public int getCid() {
+		return cid;
 	}
-
-	public String getCustomerCity() 
-	{
-		return customerCity;
+	public void setCid(int cid) {
+		this.cid = cid;
 	}
-
-	public void setCustomerCity(String customerCity) 
-	{
-		this.customerCity = customerCity;
+	public String getCname() {
+		return cname;
 	}
-
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
 	@Override
-	public String toString() 
-	{
-		return "Customer [customerName=" + customerName + ", customerId=" + customerId + ", customerCity="
-				+ customerCity + "]";
-	}	
-	
+	public String toString() {
+		return "Customer [cid=" + cid + ", cname=" + cname + ", city=" + city + "]";
+	}
 }
