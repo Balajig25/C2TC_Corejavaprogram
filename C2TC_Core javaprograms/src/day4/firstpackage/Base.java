@@ -1,6 +1,8 @@
-package day4packge1;
+package day4.firstpackage;
 
-public class Base {	/*
+public class Base {
+
+		/*
 		 * Declaring default, public, private and protected variables 
 		 */
 		int varDefault=10;
