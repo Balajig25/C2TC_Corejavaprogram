@@ -4,7 +4,7 @@ import day4.firstpackage.Base;
 
 public class Executor {
 		public static void main(String[] args) {
-			// accessing different package class
+			
 			Base b1 = new Base();
 
 			// private, default and protected members can't access
